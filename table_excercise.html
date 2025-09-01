@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Time table</title>     <style> 
+        #Time_table, th, td {             border: 2px solid red; 
+            
+        } 
+        #Time_table {             border-collapse: collapse;             text-align: center;             width: 100%; 
+        }         th {             background: rgb(179, 175, 175);         } 
+        .python { background: rgb(238, 104, 104)} 
+        .wtd { background: lightblue} 
+        .ad { background: lightyellow} 
+        .linux { background: rgb(129, 223, 129);} 
+         td:first-child {             font-weight: bold;             background-color: rgb(173, 168, 168); 
+ 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+    <h2>Time Table</h2> 
+    <table border="2" id="Time_table"> 
+        <tr> 
+            <th>Days/Time</th> 
+            <th>08:00-10:00</th> 
+            <th>10:00-12:00</th> 
+            <th>13:00-15:00</th> 
+            <th>15:00-17:00</th> 
+        </tr> 
+        <tr> 
+            <td> Monday</td> 
+            <td class="wtd">WTD</td> 
+            <td class="ad" rowspan="5">Active Directory</td> 
+            <td class="python" colspan="2" rowspan="2">Python</td> 
+        </tr> 
+        <td>Tuesday</td> 
+        <td class="linux">Linux</td> 
+        <tr> 
+            <td>Wednesday</td> 
+            <td class="python">Python</td> 
+            <td class="wtd">WTD</td> 
+            <td class="linux">Linux</td> 
+        </tr> 
+        <tr> 
+            <td>Thursday</td> 
+            <td  class="wtd" rowspan="2" colspan="1">WTD</td> 
+            <td class="linux" colspan="2">Linux</td> 
+        </tr> 
+        <tr> 
+            <td>Friday</td> 
+            <td class="wtd">WTD</td> 
+            <td class="linux">Linux</td> 
+        </tr> 
+ 
+    </table> 
+     
+</body> 
+</html> 
+ 
+
