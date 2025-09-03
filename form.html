@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+<body>
+    <div>
+        <form action="login.py" method="get" autocomplete="off">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="pwd">Password</label><br>
+            <input type="password" id="pwd" name="password"><br><br>
+            <input type="submit" value="login">
+            <!-- can also use div for break-->
+        </form>
+        <!-- For radio- can select only one from option -->
+        <p>Choose your Gender</p>
+        <form action="">
+            <div>
+                <input type="radio" id="male" name="Gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="Gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="others" name="Gender" value="Others">
+                <label for="others">Others</label>
+            </div>
+
+        </form>
+        <form action="">
+                <input type="image" src="image\motu.png" alt="Submit" width="100">
+        </form>
+
+        <!-- For dropdown -->
+        <form action="">
+                <label for="courses">Choose your course:</label>
+                <select name="courses" id="courses">
+                    <option value="csn">CSN</option>
+                    <option value="electrical">Electrical</option>
+                    <option value="mechanical">Mechanical</option>
+                    <option value="civil">Civil</option>
+                </select>
+
+        </form>
+
+        <!-- For checkbox - to select more than one -->
+         <p>Dream place to visit:</p>
+         <form action="">
+            <div>
+                <input type="checkbox" id="place1" name="place1" value="Taj Mahal">
+                <label for="place1">Taj Mahal is beautiful</label>
+                <input type="checkbox" id="place2" name="place2" value="Mustang">
+                <label for="place2">Beautiful place in Nepal</label>
+            </div>
+         </form>
+       
+    </div>
+</body>
+</html>
+
